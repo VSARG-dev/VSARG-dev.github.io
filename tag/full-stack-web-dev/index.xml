@@ -17,7 +17,17 @@
       <link>https://example.com/project/bookexchange/</link>
       <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://example.com/project/bookexchange/</guid>
-      <description></description>
+      <description>&lt;p&gt;As part of the Object Oriented Programming course offered by our college, we were given the task of implementing a Mutual Book Exchange Portal keeping the OOP principles in mind. The purpose of this portal was to enable the registered users to exchange the books that they have with them, free of cost, allowing for temporary use and return of books. &lt;br&gt;
+&lt;br&gt;
+Please check out the project Overview to get details about all the classes that were implemented, their roles, and also a site map of the final website that was hosted. Also check out our code on Github for further technical details! &lt;br&gt;
+&lt;br&gt;
+Website link: &lt;a href=&#34;https://bookexchangeportal.herokuapp.com/web/login&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://bookexchangeportal.herokuapp.com/web/login&lt;/a&gt; &lt;br&gt;
+Admin Login Details:- &lt;br&gt;
+Username: &lt;a href=&#34;mailto:admin@gmail.com&#34;&gt;admin@gmail.com&lt;/a&gt; &lt;br&gt;
+Pwd: password &lt;br&gt;
+&lt;br&gt;
+&lt;strong&gt;NOTE:&lt;/strong&gt; Website may no longer work as Heroku has announced that they will eliminate all of their free services.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

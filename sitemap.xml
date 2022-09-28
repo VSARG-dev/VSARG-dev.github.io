@@ -10,13 +10,9 @@
   <url>
     <loc>https://example.com/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://example.com/tag/bootstrap/</loc><lastmod>2022-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://example.com/tag/full-stack-web-dev/</loc><lastmod>2022-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/tag/heroku/</loc><lastmod>2022-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/tag/jsp/</loc><lastmod>2022-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/project/bookexchange/</loc><lastmod>2022-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -40,20 +36,6 @@
   <url>
     <loc>https://example.com/tag/video-processing/</loc><lastmod>2022-04-20T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://example.com/tag/academic/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/categories/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/category/demo/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/post/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/post/getting-started/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/tag/%E5%BC%80%E6%BA%90/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/category/%E6%95%99%E7%A8%8B/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://example.com/tag/aiml/</loc><lastmod>2020-11-29T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/project/alzheimerhelper/</loc><lastmod>2020-11-29T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -64,12 +46,10 @@
   <url>
     <loc>https://example.com/tag/sqlite/</loc><lastmod>2020-11-29T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://example.com/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://example.com/publication/</loc><priority>0</priority></url>
   <url>
     <loc>https://example.com/publication/example/</loc><priority>0</priority></url>
+  <url>
+    <loc>https://example.com/categories/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/publication_types/</loc><changefreq>weekly</changefreq></url></urlset>
