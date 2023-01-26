@@ -40,14 +40,73 @@ For the obtained results and graphs, check out the paper!&lt;/p&gt;
       <guid>https://example.com/project/language-identification/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Language Identification (LI) is an important first step in several speech processing systems and the recommended initial step for Automatic Speech Recognition (ASR). LI is needed for ASR as ASR based systems cannot parse the uttered language in multilingual contexts causing failure in speech recognition. LI allows these systems to automatically recognize the speaker&amp;rsquo;s language and change its language settings accordingly. We propose an attention based convolutional recurrent neural network (CRNN with Attention) that works on Mel-frequency Cepstral Coefficient (MFCC) features of audio specimens. Additionally, we reproduce some state-of-the-art approaches, namely Convolutional Neural Network (CNN) and Convolutional Recurrent Neural Network (CRNN), and compare them to our proposed method.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-overview&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Overview&#34; srcset=&#34;
+               /project/language-identification/images/lid_preprocess_huc278c2f378d7c227ea87461a771fda85_5143_7fc69ac80f5725384f6d887a9dc5f053.webp 400w,
+               /project/language-identification/images/lid_preprocess_huc278c2f378d7c227ea87461a771fda85_5143_2f936fffdefe8ee40bf904f59eca06d6.webp 760w,
+               /project/language-identification/images/lid_preprocess_huc278c2f378d7c227ea87461a771fda85_5143_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://example.com/project/language-identification/images/lid_preprocess_huc278c2f378d7c227ea87461a771fda85_5143_7fc69ac80f5725384f6d887a9dc5f053.webp&#34;
+               width=&#34;314&#34;
+               height=&#34;161&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Overview
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;why-deep-learning-approach&#34;&gt;Why Deep Learning Approach?&lt;/h2&gt;
 &lt;p&gt;Over the years, studies have utilized many prosodic and acoustic features to construct machine learning models for LI systems. Every language is composed of phonemes, which are distinct unit of sounds in that language, such as &amp;lsquo;b&amp;rsquo; of black and &amp;lsquo;g&amp;rsquo; of green. Several prosodic and acoustic features are based on phonemes, which become the underlying features on whom the performance of the statistical model depends. If two languages have many overlapping phonemes, then identifying them becomes a challenging task for a classifier. Due to such drawbacks several studies have switched over to using Deep Neural Networks (DNNs) to harness their novel auto-extraction techniques.&lt;/p&gt;
 &lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
 &lt;p&gt;In the past two decades, development of LID methods has been largely fostered through NIST Language Evaluations (LREs). As a result, the most popular benchmarks for evaluating new LID models and methods are NIST LRE evaluation dataset. The NIST LREs dataset mostly contains narrow-band telephone speech. As the NIST LRE dataset is not freely available and we wanted more modern audio sources, we decided to proceed with IndicTTS dataset, which is open sourced. &lt;br&gt;
 &lt;br&gt;
-IndicTTS is a special corpus of Indian languages covering 13 major languages of India. These include Bengali, Hindi, Marathi, Tamil, Telugu, Assamese, Bodo(India), Gujarati, Kannada, Malayalam, Manipuri, Odia and Rajasthani. It comprises of 10000+ spoken sentences/utterances each of mono and English recorded by both Male and Female native speakers. Speech waveform files are available in .wav format along with the corresponding text. &lt;br&gt;
-&lt;br&gt;
-For more information, check out the code on Github!&lt;/p&gt;
+IndicTTS is a special corpus of Indian languages covering 13 major languages of India. These include Bengali, Hindi, Marathi, Tamil, Telugu, Assamese, Bodo(India), Gujarati, Kannada, Malayalam, Manipuri, Odia and Rajasthani. It comprises of 10000+ spoken sentences/utterances each of mono and English recorded by both Male and Female native speakers. Speech waveform files are available in .wav format along with the corresponding text.&lt;/p&gt;
+&lt;h2 id=&#34;preprocessing&#34;&gt;Preprocessing&lt;/h2&gt;
+&lt;p&gt;To make our gathered data compatible with our LID system, we need to do some preprocessing. As a first step, we encode all audio files in the uncompressed, lossless WAVE format, as this format allows for future manipulations without any deterioration in signal quality. As phonemes in most of the Indian languages do not exceed 3 kHz in conversational speech, we only include frequencies of up to 5 kHz. We then extracted the features using Mel Frequency Cepstral Coefficients (MFCC).&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-steps-for-mfcc-feature-extraction&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Steps for MFCC feature extraction&#34; srcset=&#34;
+               /project/language-identification/images/lid_mfcc_hub9d38341259648edf8ef05264acc042b_57068_add7b267b1d5e683f921ca30cab3eb7c.webp 400w,
+               /project/language-identification/images/lid_mfcc_hub9d38341259648edf8ef05264acc042b_57068_b3122368d4f20214b47dfe301c00406e.webp 760w,
+               /project/language-identification/images/lid_mfcc_hub9d38341259648edf8ef05264acc042b_57068_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://example.com/project/language-identification/images/lid_mfcc_hub9d38341259648edf8ef05264acc042b_57068_add7b267b1d5e683f921ca30cab3eb7c.webp&#34;
+               width=&#34;361&#34;
+               height=&#34;666&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Steps for MFCC feature extraction
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;For more information, check out the code on Github!&lt;/p&gt;
 </description>
     </item>
     
